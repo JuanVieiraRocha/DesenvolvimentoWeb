@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+.comidasImagens{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+img{
+    width: 150px;
+}
+
+.comidasLinks{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}

@@ -4,22 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial">
         <title>Cardápio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Hora do café</h1>
-        <h2 style="padding-left: 50%;"> Cardápio</h2>
-        <tr>
-            <td><img src="panquecas.jpeg" alt="panquecas" width="100"></td>
-            <td><img src="Café.JPG" alt="café" width="80"></td>
-            <td><img src="MistoQuente.png" alt="misto-quente" width="80"></td>
-            <td><img src="Maracujá.jpeg" alt="Suco De Maracujá" width="100"></td>
-        </tr>
+        <h2>Cardápio</h2>
+        <div class="comidasImagens">
+                <img src="panquecas.jpeg" alt="panquecas" width="100">
+                <img src="Café.JPG" alt="café" width="80">
+                <img src="MistoQuente.png" alt="misto-quente" width="80">
+                <img src="Maracujá.jpeg" alt="Suco De Maracujá" width="100">
+        </div>
         <br>
-        <tr>
-            <td><a href="panquecas.html">panquecas</a></td>
-            <td><a href="café.html">café</a></td>
-            <td><a href="mistoquente.html">Misto Quente</a></td>
-            <td><a href="maracujá.html">Suco de Maracujá</a></td>
-        </tr>
+        <div class="comidasLinks">
+            <p><a href="panquecas.html">panquecas</a></p>
+            <p><a href="café.html">café</a></p>
+            <p><a href="mistoquente.html">Misto Quente</a></p>
+            <p><a href="maracujá.html">Suco de Maracujá</a></p>
+        </div>
+
+        <h2>Carrinho</h2>
+        <div>
+            <input type="text" name="cupom" id="" placeholder="Digite seu cupom">
+            <button>Aplicar cupom</button>
+        </div>
+        <p>Total: R$ 0.00</p>
+        <button>Finalizar Pedido</button>
     </body>
 </html>
