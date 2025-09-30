@@ -8,13 +8,27 @@ header{
     align-items: center;
 }
 #Nome{
-    margin-bottom: 100px;
+    margin-left: 25px;
 }
 .informacoes{
     background-color: blanchedalmond;
     padding: 10px;
     border: 1px solid black;
 }
+li{
+    margin-left: 10px;
+}
 p{
     margin-bottom: -3px;
 }
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+label, input{
+    margin-left: 10px;
+}
+
