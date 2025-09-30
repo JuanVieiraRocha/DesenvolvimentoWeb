@@ -1,0 +1,20 @@
+body{
+}
+img{
+    width: 250px;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+#Nome{
+    margin-bottom: 100px;
+}
+.informacoes{
+    background-color: blanchedalmond;
+    padding: 10px;
+    border: 1px solid black;
+}
+p{
+    margin-bottom: -3px;
+}
