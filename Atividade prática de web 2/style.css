@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(243, 248, 252);
 }
 img{
     width: 250px;
@@ -14,7 +14,7 @@ header{
     margin-left: 25px;
 }
 .informacoes{
-    background-color: blanchedalmond;
+    background-color: rgb(57, 94, 161);
     padding: 10px;
     border: 1px solid black;
 }
@@ -28,7 +28,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: blanchedalmond;
+    background-color: rgb(57, 94, 161);;
     border: 1px solid black;
 }
 label, input{
