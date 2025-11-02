@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de 8 caracteres</title>
+</head>
+<body>
+    <input type="name" placeholder="Insira seu nome">
+    <input type="password" placeholder="senha de 8 caracteres" id="senha">
+    <button id="enviar">Enviar</button>
+</body>
+</html>
+
+<script>
+    const bitao = document.getElementById("enviar")
+    let senha = document.getElementById("senha")
+    
+    bitao.addEventListener("click", () =>{
+        if(senha.length < 8){
+            alert("Senha precisa ter no minimo 8 caracteres")
+            
+        }
+    })
+</script>
