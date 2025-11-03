@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passar mouse</title>
+        <link rel="stylesheet" href="estilos/style1.css">
+    </head>
+    <body>
+        <input id="valor" type="value" placeholder="Digite um valor">
+        <button id="verificar">clicavel</button>
+        <ul>
+            <li id="item">item 1</li>
+            <li id="par">item 2</li>
+        </ul>
+    </body> 
+</html>
+
+<script>
+    const valor = document.getElementById('valor')
+    const item = document.getElementById('item')
+    const bitao = document.getElementById('verificar')
+    bitao.addEventListener('click', () =>{
+        if(valor.value % 2 == 0){
+            item.style.color = 'green'
+        }else{
+            item.style.color = 'red'
+        }
+    })
+        
+</script>

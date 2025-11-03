@@ -1,0 +1,24 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mudar Imagem</title>
+    </head>
+    <body>
+        <img id="imagem" src="cidadeMiniatura.jpeg" alt="Miniaturas" width="300px">;
+        <button id="mudarImagem">Mudar Imagem</button>
+    </body> 
+</html>
+
+<script>
+    const bitaoDeMudar = document.getElementById('mudarImagem')
+    const foto = document.getElementById('imagem')
+
+    bitaoDeMudar.addEventListener('click', () =>{
+        if(foto.getAttribute('src') == 'cidadeMiniatura.jpeg'){
+            foto.setAttribute('src', 'correndoPelaCasa.jpeg')
+        }else{
+            foto.setAttribute('src', 'cidadeMiniatura.jpeg')
+        }
+    })
+</script>

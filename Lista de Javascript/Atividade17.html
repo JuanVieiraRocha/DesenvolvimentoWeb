@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aumentar Lista</title>
+        <link rel="stylesheet" href="estilos/style1.css">
+    </head>
+    <body>
+        <ul id="lista">
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+
+        <button id="adicionarItem">clica aqui</button>
+    </body> 
+</html>
+
+<script>
+    document.getElementById('adicionarItem').addEventListener('click', () =>{
+        const paiDasListas = document.getElementById('lista')
+        const filhoDoPai = document.createElement('li')
+        filhoDoPai.textContent = "novo-Item"
+        paiDasListas.appendChild(filhoDoPai)
+    })
+        
+</script>

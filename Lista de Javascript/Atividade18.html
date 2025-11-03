@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passar mouse</title>
+        <link rel="stylesheet" href="estilos/style1.css">
+    </head>
+    <body>
+        <ul id="container">
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+    </body> 
+</html>
+
+<script>
+    const container = document.getElementById('container')
+    container.addEventListener("mouseover", () =>{
+        container.style.backgroundColor = 'red'
+    })
+    container.addEventListener("mouseout", () =>{
+        container.style.backgroundColor = 'white'
+    })
+        
+</script>

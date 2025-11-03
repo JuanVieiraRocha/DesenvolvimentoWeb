@@ -1,0 +1,24 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Destacar</title>
+        <link rel="stylesheet" href="estilos/style1.css">
+    </head>
+    <body>
+        <p class="item">item1</p>
+        <p class="item">item2</p>
+        <p class="item">item3</p>
+
+        <button id="mudaCor">clica aqui</button>
+    </body> 
+</html>
+
+<script>
+    document.getElementById('mudaCor').addEventListener('click', () =>{
+        const itens = document.getElementsByClassName('item')
+        for(let item of itens){
+            item.classList.add("destaque")
+        }
+    })
+</script>

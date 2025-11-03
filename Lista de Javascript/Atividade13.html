@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ocultar/mostrar</title>
+    </head>
+    <body>
+        <p id= "paragrafo" width="100px">
+            sjfmkasjfklsalksagjlashglkshafklhsad
+            sjigpsajgkpajgkladjgkdjgkçdgjkdlgsldg
+            fsaçfjsaçfjsaçkgjsçakgakçgjdaçgldgçldsjgda
+            fjapjfadjgdskljglkdsgjldskgkdçgksg
+            lfiasopajdgçsjlddagdshdaghsfhsdh
+        </p>
+        <button id="ocultar">Ocultar</button>
+        <button id="mostrar">Mostrar</button>
+    </body> 
+</html>
+
+<script>
+    const paragrafo = document.getElementById('paragrafo')
+    const bitaoDeEsconder = document.getElementById('ocultar')
+    const bitaoDeMostrar = document.getElementById('mostrar')
+
+    bitaoDeEsconder.addEventListener('click', () =>{
+        paragrafo.style.color = 'white'
+    })
+    bitaoDeMostrar.addEventListener('click', () => {
+        paragrafo.style.color = 'black'
+    })
+</script>
