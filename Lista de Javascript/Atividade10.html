@@ -2,22 +2,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>horario</title>
     </head>
     <body>
+        <div id="relogio">
 
+        </div>
     </body> 
 </html>
 
 <script>
-    const bitao = document.getElementById("enviar")
-    let senha = document.getElementById("senha")
-    
-    bitao.addEventListener("click", verificarSenha)
-    function verificarSenha(){
-        if(senha.value.length < 8){
-            event.preventDefault()
-            alert("Ação impedida, precisa de 8 caracteres ou mais")
-        }
+    const temporizador = document.createElement('p')
+    document.getElementById("relogio").appendChild(temporizador)
+
+    function passarHoras(){
+        const data = new Date()
+        let horas = data.getHours().toString().padStart(2, "0")
+        let minutos = data.getMinutes().toString().padStart(2, "0")
+        let segundos = data.getSeconds().toString().padStart(2, "0")
+
+        temporizador.textContent = horas + ":" + minutos + ":" +  segundos 
     }
+    
+    setInterval(passarHoras, 1000)
+
+
+
 </script>
