@@ -1,0 +1,21 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passar mouse</title>
+    </head>
+    <body id="paiDeTodos">
+        <button id="Criador">Criar Div</button>
+    </body> 
+</html>
+
+<script>
+    const bitao = document.getElementById("Criador")
+    const corpo = document.getElementById("paiDeTodos")
+    bitao.addEventListener('click', () =>{
+        const div = document.createElement('div')
+        div.textContent = "Novo div"
+        corpo.appendChild(div)
+    })
+        
+</script>

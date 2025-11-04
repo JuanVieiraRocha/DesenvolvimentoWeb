@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Miniaturas</title>
+</head>
+<body>
+
+    <h1>Galeria de Imagens 2x3</h1>
+
+    <div id="divDestaque">
+        <h2>Imagem em Destaque</h2>
+        <img id="imagemPrincipal" src="imagem1.jpg" alt="Imagem Principal">
+    </div>
+
+    <hr>
+
+    <h2>Miniaturas (Grid 2x3)</h2>
+    <div id="gradeMiniaturas">
+        <img class="miniatura" src="correndoPelaCasa.jpeg" alt="Miniatura 1" style="width: 100px; height: 100px;">
+        <img class="miniatura" src="cidadeMiniatura.jpeg" alt="Miniatura 2" style="width: 100px; height: 100px;">
+        <img class="miniatura" src="Empire Town project - scenery.jpeg" alt="Miniatura 3" style="width: 100px; height: 100px;"><br>
+        
+        <img class="miniatura" src="Steampunk engineer.jpeg" alt="Miniatura 4" style="width: 100px; height: 100px;">
+        <img class="miniatura" src="cidadeMiniatura.jpeg" alt="Miniatura 5" style="width: 100px; height: 100px;">
+        <img class="miniatura" src="correndoPelaCasa.jpeg" alt="Miniatura 6" style="width: 100px; height: 100px;">
+    </div>
+
+    <script>
+        function trocarImagem(event) {
+            const miniaturaClicada = event.target;
+            
+            if (miniaturaClicada.classList.contains('miniatura')) {
+                const novoSrc = miniaturaClicada.src;
+                
+                const imagemPrincipalElement = document.getElementById('imagemPrincipal');
+                imagemPrincipalElement.src = novoSrc;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const grade = document.getElementById('gradeMiniaturas');
+            
+            if (grade) {
+                grade.addEventListener('click', trocarImagem);
+            }
+        });
+    </script>
+
+</body>
+</html>

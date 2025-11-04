@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Imagens</title>
+    <style>
+        /* Estilos básicos para organização e visualização */
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .miniaturas img {
+            width: 100px; /* Tamanho da miniatura */
+            height: 100px;
+            margin: 5px;
+            cursor: pointer; /* Indica que é clicável */
+            border: 2px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        .miniaturas img:hover {
+            border-color: #007bff; /* Efeito visual ao passar o mouse */
+        }
+
+        #imagemPrincipal {
+            width: 400px; /* Tamanho da imagem maior */
+            height: auto;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        #divPrincipal {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="galeria">
+        <div class="miniaturas">
+            <img src="cidadeMiniatura.jpeg" alt="Miniatura 1" id="imagem1">
+            <img src="Empire Town project - scenery.jpeg" alt="Miniatura 2" id="imagem2">
+            <img src="Steampunk engineer.jpeg" alt="Miniatura 3" id="imagem3">
+        </div>
+
+        <div id="divPrincipal">
+            <h2>Imagem em Destaque</h2>
+            <img id="imagemPrincipal" src="cidadeMiniatura.jpeg" alt="Imagem Principal">
+        </div>
+    </div>
+
+    <script>
+        function trocarImagem(novoSrc) {
+            const imagemPrincipalElement = document.getElementById('imagemPrincipal');
+            imagemPrincipalElement.src = novoSrc;
+        }
+        document.getElementById('imagem1').addEventListener('click', () =>{
+            trocarImagem('cidadeMiniatura.jpeg')
+        })
+        document.getElementById('imagem2').addEventListener('click', () =>{
+            trocarImagem('Empire Town project - scenery.jpeg')
+        })
+        document.getElementById('imagem3').addEventListener('click', () =>{
+            trocarImagem('Steampunk engineer.jpeg')
+        })
+    </script>
+
+</body>
+</html>

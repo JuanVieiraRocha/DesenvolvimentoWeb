@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Galeria de Imagens</title>
+    </head>
+    <body id="corpoPagina">
+       <select id="seletorCores" onchange="mudarCorFundo()">
+            <option value="" disabled selected>Escolha uma cor</option>
+            
+            <option value="white">Branco</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="red">Vermelho</option> 
+        </select>
+    </body>
+</html>
+
+    <script>
+        function mudarCorFundo() {
+            const seletor = document.getElementById('seletorCores');
+            
+            const corSelecionada = seletor.value;
+            
+            const corpo = document.getElementById('corpoPagina');
+            
+            corpo.style.backgroundColor = corSelecionada;
+        }
+    </script>

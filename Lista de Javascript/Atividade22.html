@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passar mouse</title>
+    </head>
+    <body>
+        <button id="botao">contar</button>
+        <p id="contador">0</p>
+    </body> 
+</html>
+
+<script>
+    const bitao = document.getElementById("botao")
+    const texto = document.getElementById("contador")
+    let contador = 0
+    bitao.addEventListener('click', () =>{
+        contador += 1
+        texto.textContent = contador
+    })
+        
+</script>

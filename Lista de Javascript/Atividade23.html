@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passar mouse</title>
+    </head>
+    <body>
+        <input type="text" id="vetor">
+        <button id="enviar">enviar valor</button>
+        <p id="resultado">dobro: 0</p>
+    </body> 
+</html>
+
+<script>
+    const valor = document.getElementById('vetor')
+    const bitao = document.getElementById('enviar')
+    const resultado = document.getElementById('resultado')
+
+    bitao.addEventListener('click', () => {
+        let vetor = valor.value
+        vetor = vetor * 2
+        resultado.textContent = "dobro: " + vetor
+    })
+        
+</script>

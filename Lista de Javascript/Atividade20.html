@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>passar mouse</title>
+    </head>
+    <body>
+        <input type="text" id="vetor">
+        <button id="enviar">enviar Vetor</button>
+        <p id="resultado">Soma: 0</p>
+    </body> 
+</html>
+
+<script>
+    const valor = document.getElementById('vetor')
+    const bitao = document.getElementById('enviar')
+    const resultado = document.getElementById('resultado')
+    function somaVetor(vetor){
+        let soma = 0
+        for(let i = 0; i < vetor.length; i++){
+            soma += vetor[i]
+        }
+        return soma
+    }
+
+    bitao.addEventListener('click', () => {
+        let vetor = valor.value
+        vetor = vetor.split('').map(Number)
+        vetor = somaVetor(vetor)
+        resultado.textContent = "Soma: " + vetor
+    })
+        
+</script>

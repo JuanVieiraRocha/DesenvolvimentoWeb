@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mudar Imagem</title>
+    </head>
+    <body>
+        <img id="imagem" src="cidadeMiniatura.jpeg">;
+        <button id="pequena">Pequena</button>
+        <button id="medio">Medio</button>
+        <button id="grande">Grande</button>
+    </body> 
+</html>
+
+<script>
+    const diminuir = document.getElementById('pequena')
+    const normalizar = document.getElementById('medio')
+    const aumentar = document.getElementById('grande')
+    const foto = document.getElementById('imagem')
+
+    diminuir.addEventListener('click', () =>{
+        foto.style.width = '100px'
+        foto.style.height = '100px'
+    })
+    normalizar.addEventListener('click', () =>{
+        foto.style.width = '300px'
+        foto.style.height = '300px'
+    })
+    aumentar.addEventListener('click', () =>{
+        foto.style.width = '500px'
+        foto.style.height = '500px'
+    })
+</script>
